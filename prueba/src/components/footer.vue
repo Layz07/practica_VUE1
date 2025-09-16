@@ -13,8 +13,9 @@
       <!-- Navegación -->
       <nav class="footer-nav">
         <a href="#">Inicio</a>
-        <a href="#">Agentes</a>
+        <a href="#">Armas</a>
         <a href="#">Mapas</a>
+        <a href="#">Skins</a>
         <a href="#">Noticias</a>
       </nav>
     </div>
