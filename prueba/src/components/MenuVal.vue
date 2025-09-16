@@ -3,7 +3,7 @@
     <!-- Logo -->
     <div class="logo">
       <img src="/logo.png" alt="Valorant Logo" class="logo-img" />
-      <span class="logo-text">ValorantHub</span>
+      <span class="logo-text">Valorant Hub</span>
     </div>
 
     <!-- Links -->
@@ -15,11 +15,11 @@
       <li><RouterLink to="/noticias" exact-active-class="active">NOTICIAS</RouterLink></li>
     </ul>
 
-    <!-- Icons + Botón jugar -->
+    <!-- Icons + Botón login -->
     <div class="actions">
       <button class="icon-btn">🔍</button>
       <button class="icon-btn">🌐</button>
-      <RouterLink to="/login" class="play-btn">JUGAR</RouterLink>
+      <RouterLink to="/login" class="play-btn">LOGIN</RouterLink>
     </div>
   </nav>
 </template>
@@ -57,7 +57,7 @@
 
 .menu-links a {
   text-decoration: none;
-  color: #fff; /* Blanco */
+  color: #ccc; /* Gris claro */
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -99,7 +99,7 @@
   background: #333;
 }
 
-/* Botón Jugar */
+/* Botón Login */
 .play-btn {
   background: #ff4655;
   color: #fff;
