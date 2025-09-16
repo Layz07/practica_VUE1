@@ -1,28 +1,24 @@
 <template>
   <nav class="menu-bar">
-
+    <!-- Logo -->
     <div class="logo">
-      <img src="/Logo.png" alt="Valorant Logo" class="logo-img" />
-      <span class="logo-text">ValorantHub</span>
+      <img src="/logo.png" alt="Valorant Logo" class="logo-img" />
     </div>
 
+    <!-- Links -->
     <ul class="menu-links">
-      <li>
-        <RouterLink to="/" exact-active-class="active" class="inicio">Inicio</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/armas" exact-active-class="active" class="armas">Armas</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/agentes" exact-active-class="active" class="agentes">Agentes</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/skins" exact-active-class="active" class="skins">Skins</RouterLink>
-      </li>
+      <li><RouterLink to="/" exact-active-class="active">INICIO</RouterLink></li>
+      <li><RouterLink to="/armas" exact-active-class="active">ARMAS</RouterLink></li>
+      <li><RouterLink to="/agentes" exact-active-class="active">AGENTES</RouterLink></li>
+      <li><RouterLink to="/skins" exact-active-class="active">SKINS</RouterLink></li>
+      <li><RouterLink to="/noticias" exact-active-class="active">NOTICIAS</RouterLink></li>
     </ul>
 
-    <div class="login-btn">
-      <RouterLink to="/login">Login</RouterLink>
+    <!-- Icons + Botón jugar -->
+    <div class="actions">
+      <button class="icon-btn">🔍</button>
+      <button class="icon-btn">🌐</button>
+      <RouterLink to="/login" class="play-btn">JUGAR</RouterLink>
     </div>
   </nav>
 </template>
@@ -31,37 +27,22 @@
 </script>
 
 <style scoped>
-
+/* ===== Navbar general ===== */
 .menu-bar {
-  background: #0f1923;
+  background: #111; /* Fondo negro */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 /* ===== Logo ===== */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .logo-img {
-  width: 40px;
-  height: 40px;
-}
-
-.logo-text {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #ff4655;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  height: 32px;
+  object-fit: contain;
 }
 
 /* ===== Links ===== */
@@ -73,54 +54,62 @@
   padding: 0;
 }
 
-.menu-links li {
-  font-weight: 600;
-}
-
-/* Colores por sección */
-.inicio {
-  color: #4cafef; /* Azul */
-}
-
-.armas {
-  color: #ff4655; /* Rojo */
-}
-
-.agentes {
-  color: #43ff64; /* Verde */
-}
-
-.skins {
-  color: #ffb347; /* Naranja */
-}
-
 .menu-links a {
   text-decoration: none;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 3px;
+  color: #fff; /* Blanco */
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
 
 .menu-links a:hover {
-  border-bottom: 2px solid currentColor;
+  color: #ff4655; /* Rojo Valorant */
 }
 
-/* Activo */
 .active {
-  border-bottom: 2px solid currentColor;
+  color: #ff4655;
 }
 
-/* ===== Login Button ===== */
-.login-btn a {
-  text-decoration: none;
-  background: #ff4655;
+/* ===== Acciones (derecha) ===== */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Botones íconos (buscar, idioma) */
+.icon-btn {
+  background: #222;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
   transition: background 0.3s;
 }
 
-.login-btn a:hover {
-  background: #d93b47;
+.icon-btn:hover {
+  background: #333;
+}
+
+/* Botón Jugar */
+.play-btn {
+  background: #ff4655;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.play-btn:hover {
+  background: #e63c4b;
 }
 </style>
