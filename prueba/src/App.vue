@@ -1,8 +1,6 @@
 <template>
   <div>
     <router-view />
-
-    
     <Menu />
     <ValorantBody />
     <Footer />
@@ -18,9 +16,9 @@ import ValorantBody from './components/ValorantBody.vue';
 export default {
   name: 'App',
   components: {
-    Footer,
     Menu,
-    ValorantBody
+    ValorantBody,
+    Footer,  
   }
 }
 </script>
