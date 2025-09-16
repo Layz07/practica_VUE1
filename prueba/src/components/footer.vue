@@ -41,12 +41,6 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: "FooterValorant",
-};
-</script>
-
 <style scoped>
 
 </style>
