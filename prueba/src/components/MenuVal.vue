@@ -2,8 +2,8 @@
   <nav class="menu-bar">
     <!-- Logo -->
     <div class="logo">
-      <img src="/logo.png" alt="Valorant Logo" class="logo-img" />
-      <span class="logo-text">Valorant Hub</span>
+      <img src="/Logo.png" alt="Valorant Logo" class="logo-img" />
+      <span class="logo-text">ValorantHub</span>
     </div>
 
     <!-- Links -->
@@ -113,4 +113,12 @@
 .play-btn:hover {
   background: #e63c4b;
 }
+.logo-text {
+  color: rgb(250, 1, 1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+}
+
 </style>
