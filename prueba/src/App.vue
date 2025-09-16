@@ -1,26 +1,27 @@
 <template>
   <div>
-    <!-- Aquí todo el contenido principal de tu aplicación -->
     <router-view />
 
-    <!-- Aquí se llama al componente Footer -->
     <Footer />
+    <Menu />
   </div>
 </template>
 
 <script>
-// Importamos el componente que está en src/components/footer.vue
-import Footer from './components/footer.vue'
+import Footer from './components/footer.vue';
+import Menu from "./components/menu.vue";
+
 
 export default {
   name: 'App',
   components: {
-    Footer
+    Footer,
+    Menu
   }
 }
 </script>
 
 <style>
-/* Tus estilos globales */
+
 </style>
 
