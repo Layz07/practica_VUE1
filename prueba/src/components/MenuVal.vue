@@ -2,7 +2,7 @@
   <nav class="menu-bar">
     <!-- Logo -->
     <div class="logo">
-      <img src="/Logo.png" alt="Valorant Logo" class="logo-img" />
+      <img src="/logo.png" alt="Valorant Logo" class="logo-img" />
       <span class="logo-text">ValorantHub</span>
     </div>
 
