@@ -1,16 +1,11 @@
 <template>
   <nav class="menu-bar">
-    <!-- Logo + Nombre -->
+    <!-- Logo -->
     <div class="logo">
-      <img
-        src="https://us-tuna-sounds-images.voicemod.net/e3904d15-f20e-4f63-8e22-047822c5937a-1663641471979.jpg"
-        alt="Valorant Logo"
-        class="logo-img"
-      />
-      <span class="logo-text">VALORANTHUB</span>
+      <img src="https://us-tuna-sounds-images.voicemod.net/e3904d15-f20e-4f63-8e22-047822c5937a-1663641471979.jpg" alt="Valorant Logo" class="logo-img" />
     </div>
 
-    <!-- Links -->
+
     <ul class="menu-links">
       <li><RouterLink to="/" exact-active-class="active" class="inicio">INICIO</RouterLink></li>
       <li><RouterLink to="/armas" exact-active-class="active" class="armas">ARMAS</RouterLink></li>
@@ -19,11 +14,11 @@
       <li><RouterLink to="/noticias" exact-active-class="active" class="noticias">NOTICIAS</RouterLink></li>
     </ul>
 
-    <!-- Acciones -->
+    <!-- Icons + Botón jugar -->
     <div class="actions">
       <button class="icon-btn">🔍</button>
       <button class="icon-btn">🌐</button>
-      <RouterLink to="/login" class="play-btn">JUGAR</RouterLink>
+      <RouterLink to="/login" class="play-btn">LOGIN</RouterLink>
     </div>
   </nav>
 </template>
@@ -142,7 +137,7 @@
   background: #333;
 }
 
-/* Botón Jugar */
+/* Botón Login */
 .play-btn {
   background: #ff4655;
   color: #fff;
