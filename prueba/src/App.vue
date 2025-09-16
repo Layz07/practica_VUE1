@@ -9,7 +9,7 @@
 
 <script>
 import Footer from './components/footer.vue';
-import Menu from "./components/menu.vue";
+import Menu from "./components/MenuVal.vue";
 
 
 export default {
