@@ -2,7 +2,7 @@
   <nav class="menu-bar">
 
     <div class="logo">
-      <img src="/Logo.png" alt="Valorant Logo" class="logo-img" />
+      <img src="/Logo.png" alt="Stylized red V logo representing Valorant next to the text ValorantHub in bold uppercase red letters on a dark modern background, conveying a bold and energetic atmosphere" class="logo.png" />
       <span class="logo-text">ValorantHub</span>
     </div>
 
