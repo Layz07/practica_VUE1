@@ -1,12 +1,12 @@
 <template>
   <nav class="menu-bar">
-    <!-- Logo -->
+
     <div class="logo">
-      <img src="/Logo.png" alt="Valorant Logo" class="logo-img" />
+      <img src="/logo.png" alt="Valorant Logo" class="logo-img" />
       <span class="logo-text">ValorantHub</span>
     </div>
 
-    <!-- Links -->
+
     <ul class="menu-links">
       <li><RouterLink to="/" exact-active-class="active">INICIO</RouterLink></li>
       <li><RouterLink to="/armas" exact-active-class="active">ARMAS</RouterLink></li>
@@ -15,7 +15,7 @@
       <li><RouterLink to="/noticias" exact-active-class="active">NOTICIAS</RouterLink></li>
     </ul>
 
-    <!-- Icons + Botón login -->
+
     <div class="actions">
       <button class="icon-btn">🔍</button>
       <button class="icon-btn">🌐</button>
@@ -57,7 +57,7 @@
 
 .menu-links a {
   text-decoration: none;
-  color: #ccc; /* Gris claro */
+  color: #fff; /* Blanco */
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -113,12 +113,4 @@
 .play-btn:hover {
   background: #e63c4b;
 }
-.logo-text {
-  color: rgb(250, 1, 1);
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-left: 0.5rem;
-  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
-}
-
 </style>
