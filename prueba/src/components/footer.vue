@@ -1,46 +1,58 @@
 <template>
-  <footer class="bg-gray-900 text-gray-300 py-6 mt-10">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      
-      <!-- Logo / Nombre -->
-      <div class="flex items-center space-x-2">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Valorant_logo_-_pink_color_version.svg" 
-          alt="Valorant Logo" 
-          class="w-8 h-8"
-        />
-        <span class="text-lg font-bold text-white">Valorant Info</span>
-      </div>
-      
-      <!-- Navegación -->
-      <div class="flex space-x-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-red-500">Inicio</a>
-        <a href="#" class="hover:text-red-500">Agentes</a>
-        <a href="#" class="hover:text-red-500">Mapas</a>
-        <a href="#" class="hover:text-red-500">Noticias</a>
-      </div>
-      
-      <!-- Redes sociales -->
-      <div class="flex space-x-4 mt-4 md:mt-0">
-        <a href="#" class="hover:text-red-500">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="#" class="hover:text-red-500">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="#" class="hover:text-red-500">
-          <i class="fa-brands fa-twitch"></i>
-        </a>
-      </div>
-    </div>
-    
-    <!-- Línea inferior -->
-    <div class="text-center text-sm text-gray-500 mt-6 border-t border-gray-700 pt-4">
-      © 2025 Valorant Info - Página de fans. No oficial de Riot Games.
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Valorant Info</h3>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Agentes</a>
+        <a href="#">Mapas</a>
+        <a href="#">Noticias</a>
+      </nav>
+      <p>© 2025 Valorant Info - Página de fans, no oficial de Riot Games.</p>
     </div>
   </footer>
 </template>
 
-<style scoped>
+<script>
+export default {
+  name: "FooterValorant",
+};
+</script>
 
+<style scoped>
+.footer {
+  background-color: #0f1923; /* color oscuro estilo Valorant */
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ff4655; /* rojo característico de Valorant */
+}
+
+.footer-content nav {
+  margin: 10px 0;
+}
+
+.footer-content nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-content nav a:hover {
+  color: #ff4655;
+}
+
+.footer-content p {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #888;
+}
 </style>
+
