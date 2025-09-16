@@ -3,6 +3,7 @@
     <!-- Logo -->
     <div class="logo">
       <img src="https://us-tuna-sounds-images.voicemod.net/e3904d15-f20e-4f63-8e22-047822c5937a-1663641471979.jpg" alt="Valorant Logo" class="logo-img" />
+      <span class="logo-text">ValorantHub</span>
     </div>
 
     <!-- Links -->
@@ -112,4 +113,12 @@
 .play-btn:hover {
   background: #e63c4b;
 }
+.logo-text {
+  color: rgb(250, 1, 1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+}
+
 </style>
