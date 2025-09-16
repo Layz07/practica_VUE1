@@ -2,7 +2,7 @@
   <nav class="menu-bar">
     <!-- Logo -->
     <div class="logo">
-      <img src="/Logo.png" alt="Valorant Logo" class="logo-img" />
+      <img src="https://us-tuna-sounds-images.voicemod.net/e3904d15-f20e-4f63-8e22-047822c5937a-1663641471979.jpg" alt="Valorant Logo" class="logo-img" />
       <span class="logo-text">ValorantHub</span>
     </div>
 
